@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bibm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+    
+  
+  <title>Herald College | BIBM</title>
+</head>
+<body>
+  
+  <div class="logo"><img src="images/logo.png">
+  </div>
+
+  <div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bit.html">BIT</a>
+      <a href="bibm.html">BIBM</a>
+    </div>
+  </div> 
+  <a href="events.html">Events</a>
+  <a href="galleries.html">Galleries</a>
+  
+  <a href="admin.html">Admin</a>
+  
+</div>
+
+<div class="main">
+	<div class="text-block">
+		<div class="block1">
+  <h2>Bachelor in International Business Management</h2>
+</div>
+<div class="block2">
+	<img src="images/bibm.png">
+</div>
+</div>
+  <p>International Business has been a major phenomena to increase the knowledge and expertise worldwide. Organisations are going beyond boundaries to compete in the international market. These organisations need experts who can devise international strategies to work across multicultural barriers. This programme covers most important topics in international business, including emerging markets, globalisation, the role of trust, and comparing markets and business environments in different countries. As well as building an understanding of multinational companies and their strategies, you will explore how local companies can adapt these entrepreneurial and innovative manners to create an economic growth both inside and outside the nation.</p>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Four columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#e37d74;">
+    Year 1
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#7c94d9;">
+    Year 2
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#a35f94;">
+    Year 3
+  </div>
+  <div class="column" onclick="openTab('b4');" style="background:#d19458;">
+    Year 4
+  </div>
+</div>
+
+  <div id="b1" class="containerTab" style="display:none;background:#e37d74">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 3</h2>
+  <p>3GK012: Preparing for Succcess at University<br><br>
+3GK013: Project-Based Learning<br><br>
+3BU003: Principles of Business<br><br>
+3BU002: 21st Century Management</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:#7c94d9">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 4</h2>
+   <p>4IB004: Business in a Global Context <br><br>
+4MK007: Principles of Marketing<br><br>
+4MK006: Introduction to Brand Communication<br><br>
+4HR002: Introduction to People at work<br><br>
+4AC013: Financial Management<br><br>
+4HR017: Diversity Management in a Global Context</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:#a35f94;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 5</h2>
+  <p>5FC003: International Financial Institutions and Market<br><br>
+5IB004: Economics of Managerial Decision-Making<br><br>
+5IB005: Contemporary Issues in IBM<br><br>
+5BU010: Digital Business and Innovation<br><br>
+5BU012: Operations and Supply Management<br><br>
+5HR006: International Human Resources – The Key Issues</p>
+</div>
+<div id="b4" class="containerTab" style="display:none;background:#d19458">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 6</h2>
+  <p>6IB003: Dynamics of Multinational Companies<br><br>
+6IB006: Debating Globalisation<br><br>
+6IB011: Business Research Methods<br><br>
+6MK001: International Marketing<br><br>
+6BE003: Strategic Management<br><br>
+6BU013: Independent Project</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bit.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+    
+  
+  <title>Herald College | BIT</title>
+</head>
+<body>
+  <div class="logo"><img src="images/logo.png">
+  </div>
+
+  <div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bit.html">BIT</a>
+      <a href="bibm.html">BIBM</a>
+    </div>
+  </div> 
+  <a href="events.html">Events</a>
+  <a href="galleries.html">Galleries</a>
+  
+  <a href="admin.html">Admin</a>
+  
+</div>
+
+<div class="main">
+  <div class="text-block">
+    <div class="block1">
+  <h2>Bachelor in Computer Science</h2>
+</div>
+<div class="block2">
+  <img src="images/bit.png">
+</div>
+</div>
+  <p>This programme aims to provide students with the knowledge of core principles of computer science by combining it with modern computer languages, tools, techniques, and methodologies used by computer professional all over the world. Students will be able to develop and enhance themselves as a programmer, along with problem solving skills. You will learn how to develop software that meets client needs and will have the opportunity to develop a piece of software for your final project. This BIT in computing course provides an excellent stepping stone to allow you to move directly into a career in Computing.</p>
+</div>
+
+
+
+
+
+
+<!-- three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#e37d74;">
+    Year 1
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#7c94d9;">
+    Year 2
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#a35f94;">
+    Year 3
+  </div>
+</div>
+
+  <div id="b1" class="containerTab" style="display:none;background:#e37d74">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 4</h2>
+  <p>4CI018: Academic Skills and Team Based Learning<br><br>
+4CS001: Introductory Programming and Problem Solving<br><br>
+4CS015: Fundamentals of Computing<br><br>
+4CS016: Embedded System Programming<br><br>
+4CS017: Internet Software Architecture<br><br>
+4MM013: Computational Mathematics</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:#7c94d9">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 5</h2>
+   <p>5CS037: Concepts and Technologies of AI<br><br>
+5CS019: Object-Oriented Design and Programming<br><br>
+5CS021: Numerical Methods and Concurrency<br><br>
+5CS022: Distributed and Cloud System Programming<br><br>
+5CS024: Collaborative Development<br><br>
+5CS020: Human Computer Interaction</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:#a35f94;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 6</h2>
+  <p>6CS014: Complex System<br><br>
+6CS005: High Performance Computing<br><br>
+6CS007: Project and Professionalism<br><br>
+6CS012: Artificial Intelligence and Machine Learning<br><br>
+6CS030: Big Data</p>
+</div>
+
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+
+</body>
+</html>

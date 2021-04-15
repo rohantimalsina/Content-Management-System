@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.main {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 50px;
+  padding: 0px 10px;
+  
+}
+.block1{
+  float: left;
+  width: 50%;
+}
+.block2{
+  float: right;
+  width: 40%;
+  margin-top: 70px;
+}
+h2{
+	font-family: Oswald;
+	font-size: 30px;
+}
+p{
+  width: 50%; 
+  font-family: Noto Sans;
+  font-size: 16px; 
+}
+
+/* Four equal columns for Years, floats next to each other */
+.column {
+  margin-top: 100px; 
+  float: left;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
