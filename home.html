@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+	
+	<title>Herald College Kathmandu</title>
+</head>
+<body>
+	<div class="logo">
+    	<img src="images/logo.png">
+    </div>
+	
+
+   
+	<div class="topnav" id="navbar">
+		 
+		
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bit.html">BIT</a>
+      <a href="bibm.html">BIBM</a>
+    </div>
+  </div> 
+  <a href="events.html">Events</a>
+  <a href="galleries.html">Galleries</a>
+  
+  <a href="admin.html">Admin</a>
+	
+</div>
+
+
+
+<div class="content">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/summer.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/student.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/hall.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+
+<div class="preview">
+  <div class="detail1" style="background-color: #414040;">
+    <h2>ACADEMIC</h2>
+    <p>Teaching facilities and infrastructure meet the international standards.<br>Bachelor degree certificate from the University of Wolverhampton.</p>
+  </div>
+  <div class="detail2" style="background-image: url(images/bit.png)" style="width: 100%";>
+  </div>
+  <div class="detail3" style="background-image: url(images/bibm.png);">
+  </div>
+  <div class="detail1" style="background-color:#414040;">
+    <h2>RECOGNITION</h2>
+    <p>Direct partners of a prestigious UK University, with international faculties approved by the relevant awarding bodies (i.e., University of Wolverhampton).</p>
+  </div>
+</div>
+
+
+
+<script>
+	
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 5 seconds
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
