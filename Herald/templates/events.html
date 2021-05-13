@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    
+	
+	<title>Herald College Kathmandu</title>
+</head>
+<body>
+	<div class="logo"><img src="{% static 'images/logo.png' %}"width="300" height="80">
+  </div>
+
+	<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bit.html">BIT</a>
+      <a href="bibm.html">BIBM</a>
+    </div>
+  </div> 
+  <a href="events.html">Events</a>
+  <a href="galleries.html">Galleries</a>
+  
+  <a href="contact us.html">Contact Us</a>
+	</div>
+</div>
+<!----------Events Section------------------------>
+
+    <div class="buy1">
+      <div class="event1">
+          <b>Upcoming events </b>
+        </div>
+                <div class="rec2">
+                <p>{% for x in newevent %}
+            <h1> {{x.title}}</h1>
+          </p>
+              <p>{{x.date_and_time}}
+                <li><b>{{x.venue}}</b></li>
+
+                <br><div class="desc">{{x.description}}</div>
+             {% endfor %}</p>
+                </div>
+  </div>  
+</body>
+</html>
+
+        

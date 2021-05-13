@@ -1,0 +1,358 @@
+.logo img{
+  float: left;
+  width: 300px;
+  height: 80px;
+  margin-left: 50px;
+  margin-top: 10px;
+  background: white;
+  
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  float: right;
+  
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}  
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  cursor: pointer;
+
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #74c043;
+}
+
+.dropdown-content a:hover {
+  background-color: #74c043;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+ 
+  
+  
+
+}
+
+/* Hide the images by default */
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*-------Preview-------*/
+
+.preview{
+  background-color: white;
+  width: 100%;
+}
+
+.detail1 {
+  float: left;
+  width: 28%;
+  padding: 10px;
+  height: 150px;
+  margin-top: 50px;
+}
+.detail2{
+  float: left;
+  width: 22%;
+  padding: 10px;
+  height: 150px;
+  margin-top: 50px;
+}
+.detail3{
+  float: left;
+  width: 22%;
+  padding: 10px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.preview:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.preview h2{
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+.preview p{
+  color: white;
+  font-family: Arial;
+}
+
+
+/*----------------Galleries Section----------*/
+
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gal{
+    width: 85%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+  }
+  h1{
+    padding-top: 20px;
+    font-weight: 550;
+    font-size: 25px;
+    opacity: 70%;
+  }
+
+  .gal-col{
+    flex-basis: 26%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gal-col img{
+    height: 100%;
+    width: 100%;
+  }
+  .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+
+  .layer:hover{
+    background: #74C043;
+
+  }
+  .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .layer:hover h3{
+    bottom: 48%;
+    opacity: 1;
+  }
+
+  /*--------------Colleges--------------------*/
+
+
+
+
+
+  .buy{
+   box-shadow: 5px 8px 16px 5px grey;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  position: absolute;
+  top: 150px;
+  margin-left: 130px;
+  margin-right: 100px;
+  overflow: hidden;
+}
+
+.part1{
+  padding-left:45px;
+  height: 315px;
+  width: 540px;
+
+}
+
+li {
+  font-size: 16px;
+}
+
+.part1:hover{
+
+  transform: scale(1.5);
+ margin-top: 10px;
+ margin-bottom:10px;
+
+  z-index: 2;
+  box-shadow: 5px 8px 16px 5px grey;
+}
+
+/*----------------Event CSS---------------------*/
+
+.event1{
+     padding: 2px;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     margin-left: 10px;
+ }
+  .buy1{
+   box-shadow: 5px 8px 16px 5px grey;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  position: absolute;
+  top: 150px;
+  margin-left: 110px;
+  margin-right: 100px;
+  overflow: hidden;
+}
+
+.rec2 {
+  margin-top: 20px;
+  padding: 25px;
+}
+.rec2 p{
+  color: red;
+}
+.rec2 li{
+  color: #74C043;
+}
+
+.desc{
+  max-width: 580px;
+}
+
+.foot{
+  margin-top: 200%;
+}
+
+
+
+
+

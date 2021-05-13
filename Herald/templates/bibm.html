@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bibm.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+    
+  
+  <title>Herald College Kathmandu</title>
+</head>
+<body>
+  
+  <div class="logo"><img src="{% static 'images/logo.png' %}"width="300" height="80">
+  </div>
+
+    <div class="topnav" id="navbar">
+     
+    
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bit.html">BIT</a>
+      <a href="bibm.html">BIBM</a>
+    </div>
+  </div> 
+  <a href="events.html">Events</a>
+  <a href="galleries.html">Galleries</a>
+  
+  <a href="contact us.html">Contact</a>
+  
+</div>
+  
+</div>
+
+<div class="main">
+	<div class="text-block">
+		<div class="block">
+  <h2>Bachelor in International Business Management</h2>
+</div>
+<div class="block">
+	<img src="{% static 'images/bibm.png' %}"width="300" height="80">
+</div>
+</div>
+  <p>International Business has been a major phenomena to increase the knowledge and expertise worldwide. Organisations are going beyond boundaries to compete in the international market. These organisations need experts who can devise international strategies to work across multicultural barriers. This programme covers most important topics in international business, including emerging markets, globalisation, the role of trust, and comparing markets and business environments in different countries. As well as building an understanding of multinational companies and their strategies, you will explore how local companies can adapt these entrepreneurial and innovative manners to create an economic growth both inside and outside the nation.</p>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Four columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#e37d74;">
+    Year 1
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#7c94d9;">
+    Year 2
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#a35f94;">
+    Year 3
+  </div>
+  <div class="column" onclick="openTab('b4');" style="background:#d19458;">
+    Year 4
+  </div>
+</div>
+
+  <div id="b1" class="containerTab" style="display:none;background:#e37d74">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 3</h2>
+  <p>
+    {% for x in bibm_Year_1 %}
+ <li> {{x.course_code}}:{{x.course_name}}</li>
+ {% endfor %}
+</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:#7c94d9">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 4</h2>
+   <p>
+    {% for x in bibm_Year_2 %}
+ <li> {{x.course_code}}:{{x.course_name}}</li>
+ {% endfor %}
+</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:#a35f94;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 5</h2>
+  <p>
+    {% for x in bibm_Year_3 %}
+ <li> {{x.course_code}}:{{x.course_name}}</li>
+ {% endfor %}
+</p>
+</div>
+<div id="b4" class="containerTab" style="display:none;background:#d19458">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Level 6</h2>
+  <p>
+    {% for x in bibm_Year_4 %}
+ <li> {{x.course_code}}:{{x.course_name}}</li>
+ {% endfor %}
+</p>
+</div>
+
+<script src="{% static 'js/bibm.js' %}" type="text/javascript"></script>
+
+
+</body>
+</html>

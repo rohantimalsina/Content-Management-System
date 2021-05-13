@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    
+	
+	<title>Herald College Kathmandu</title>
+</head>
+<body>
+	<div class="logo"><img src="{% static 'images/logo.png' %}">
+	</div>
+
+	<div class="topnav" id="myTopnav">
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bit.html">BIT</a>
+      <a href="bibm.html">BIBM</a>
+    </div>
+  </div> 
+  <a href="events.html">Events</a>
+  <a href="galleries.html">Galleries</a>
+  
+  <a href="contact us.html">Contact Us</a>
+	
+</div>
+
+<!----------------------------Galleries Section--------------------------------->
+
+ <div class="buy">
+                <div class="rec2">
+                <p>
+                  {% for x in campus %}
+                  <li>{{x.title}}</li>
+                  <p>
+                <img src="{{ x.image.url }}" class="part1" alt="image-{{ x.title }}" width="325px" height="400px" />
+              </p>
+                  {% endfor %}
+              </p>
+                <!----<img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">---->
+                </div>
+  </div>  
+   <div class="buy">
+                <div class="rec2">
+                <p>
+                  {% for x in campus %}
+                  <li>{{x.title}}</li>
+                  <p>
+                <img src="{{ x.image.url }}" class="part1" width="325px" height="400px" alt="image-{{ x.title }}"/>
+              </p>
+                  {% endfor %}
+              </p>
+                <!----<img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">---->
+                </div>
+  </div>  
+
+ <div class="buy">
+                <div class="rec2">
+                <p>
+                  {% for x in campus %}
+                  <li>{{x.title}}</li>
+                  <p>
+                <img src="{{ x.image.url }}" class="part1" width="325px" height="400px" alt="image-{{ x.title }}"/>
+              </p>
+                  {% endfor %}
+              </p>
+                <!----<img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">
+                <img src="{% static 'images/summer4.jpg' %}" class="part1" alt="uk" width="325px" height="400px">---->
+                </div>
+  </div>  
+
+</body>
+</html>
