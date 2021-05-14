@@ -1,16 +1,19 @@
-
+h3{
+  display: inline-block;
+  margin-top: 50px;
+  width: 100%;
+}
 .container {
-    border-radius: 30px;
+    width: 100%;
     background-color: #f2f2f2;
     padding: 20px;
+    display: inline-block;
   }
-  form {
-    border: 160px solid #f1f1f1;
-  }
+  
 
 input[type=text], select, textarea {
-    width: 100%; 
-    padding: 20px;
+    width: 50%; 
+    padding: 12px;
     border: 1px solid #ccc; 
     border-radius: 4px; 
     box-sizing: border-box; 
@@ -29,7 +32,7 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #74c043;
   }
   
   
