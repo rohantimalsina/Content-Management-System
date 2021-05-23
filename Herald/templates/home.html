@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    
+  
+  <title>Herald College Kathmandu</title>
+</head>
+<body>
+  <div class="logo">
+      <img src="{% static 'images/logo.png' %}">
+    </div>
+  
+
+   
+  <div class="topnav" id="navbar">
+     
+    
+  <a href="home.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Courses 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bit.html">BIT</a>
+      <a href="bibm.html">BIBM</a>
+    </div>
+  </div> 
+  <a href="events.html">Events</a>
+  <a href="galleries.html">Galleries</a>
+  
+  <a href="contact.html">Contact</a>
+  
+</div>
+
+
+
+<div class="content">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="{% static 'images/summer.jpg' %}" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="{% static 'images/student.jpg' %}" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="{% static 'images/hall.jpg' %}" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+</div>
+
+<script src="{% static 'js/home.js' %}" type="text/javascript"></script>
+
+
+
+</body>
+</html>
